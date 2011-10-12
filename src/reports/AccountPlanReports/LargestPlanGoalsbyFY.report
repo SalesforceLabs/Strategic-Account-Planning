@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SFDC_Acct_Plan__c.Last_FY_Account_Sales__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Acct_Plan__c.Account_Sales_Growth__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Acct_Plan__c.Plan_FY_Account_Sales_Goal__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Acct_Plan__c.Plan_FY_Product_Sales_Goal__c</field>
+    </columns>
+    <columns>
+        <field>SFDC_Acct_Plan__c.Plan_FY_Services_Sales_Goal__c</field>
+    </columns>
+    <description>What are the largest account plans year-over-year?</description>
+    <format>Tabular</format>
+    <name>Largest Plan Goals by FY</name>
+    <reportType>CustomEntity$SFDC_Acct_Plan__c@SFDC_Acct_Plan__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>SFDC_Acct_Plan__c.Plan_FY_Account_Sales_Goal__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SFDC_Acct_Plan__c.Last_Plan_Revision__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Overall goals, objectives, and challenges for penetrating an account.</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account_Goals__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Goals</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Account_Sales_Growth__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Last_FY_Account_Sales__c = 0 , 1,   (  Plan_FY_Account_Sales_Goal__c  - Last_FY_Account_Sales__c  ) /  Last_FY_Account_Sales__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Sales Growth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Existing Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Plans</relationshipLabel>
+        <relationshipName>R00N60000001PRP8EAO</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Key_Business_Problems__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Business Problems</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Key_Client_Sponsor__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Client Sponsor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Account Plans</relationshipLabel>
+        <relationshipName>R00N60000001PRPAEA4</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_FY_Account_Sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>Last_FY_Product_Sales__c  +  Last_FY_Services_Sales__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last FY Account Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_FY_Product_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Last FY Product Sales</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_FY_Services_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Last FY Services Sales</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_Plan_Revision__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Plan Revision</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Plan_FY_Account_Sales_Goal__c</fullName>
+        <externalId>false</externalId>
+        <formula>Plan_FY_Product_Sales_Goal__c  +  Plan_FY_Services_Sales_Goal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Plan FY Account Sales Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Plan_FY_Product_Sales_Goal__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan FY Product Sales Goal</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Plan_FY_Services_Sales_Goal__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan FY Services Sales Goal</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Planning_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Planning Year</label>
+        <picklist>
+            <picklistValues>
+                <fullName>FY2005</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FY2006</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FY2007</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FY2008</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FY2009</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FY2010</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Potential_Barriers__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Barriers</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Product_Sales_Growth__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Last_FY_Product_Sales__c = 0, 1 ,  (  Plan_FY_Product_Sales_Goal__c -  Last_FY_Product_Sales__c ) /  Last_FY_Product_Sales__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Sales Growth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Services_Sales_Growth__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Last_FY_Services_Sales__c = 0 , 1, (  Plan_FY_Services_Sales_Goal__c  -  Last_FY_Services_Sales__c  )  /  Last_FY_Services_Sales__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Services Sales Growth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Strengths_to_Leverage__c</fullName>
+        <externalId>false</externalId>
+        <label>Strengths to Leverage</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Acct Plan</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Acct Plan Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Acct Plans</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Planning_Year__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Plan_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Planning_Year__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Plan_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.ALIAS</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Planning_Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Plan_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

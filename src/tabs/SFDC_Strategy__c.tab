@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Specific set of strategies tied to each account that the sales manager needs to executive.  Each strategy lists specific revenue goals and products to be sold to a particular division or department.  Tasks and milestones are also attached to each strategy.</description>
+    <mobileReady>false</mobileReady>
+    <motif>Custom14: Hands</motif>
+</CustomTab>

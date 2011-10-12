@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Application Splash Page</title>
+		<style type="text/css" media="all"> body#splashBody { font-family: arial, helvetica, verdana, sans-serif; font-size: 80%; margin: 0; padding: 0; width: 97%; }
+	img { border: 0; margin: 0; padding: 0; }
+	p { margin: 0; padding: 0; }
+	h1.appName { font-weight: bold; font-size: 100%; color: #FFF; background-color: #638658; padding: 10px 0 10px 8px; margin: 0 0 15px 0; }
+	h2 { color: #000; padding: 2px 0 2px 8px; margin-top: 0; font-size: 90%; }
+	h2.exchangeTitle { background-color: #999; }
+	#splash { margin: 0; padding: 0; width: 100%; }
+	#splash td { margin: 0; padding: 0; }
+	#splash #splashLeft { vertical-align: top; background-color: #F3F3EC; border-bottom: 2px solid #638658; }
+	#splash #splashCenter { display:block; width: 15px; background-color: #FFF; }
+	#splash #splashRight { vertical-align: top; background-color: #E8E8E8; border-bottom: 2px solid #999; }
+	#splash #splashLeft .about, #splash #splashLeft .exchange { width: 100%; }
+	#splash #splashRight .exchange p { font-size: 90%; color: #333; margin: 0 10px 12px 10px; line-height: 1.4em; }
+	#splash #splashLeft .about p { font-size: 90%; color: #333; margin: 0 10px 12px 15px; line-height: 1.4em; }
+	#splash #splashLeft .about fieldset { color: #333; margin: 0 15px 10px 15px; padding: 2px; }
+	#splash #splashLeft .about fieldset ul { padding: 0; margin: .3em 0 .3em 2em; }
+	#splash #splashLeft .about fieldset li { padding: 0; margin: 0; }
+	#splash #splashLeft .about legend { font-size: 90%; color: #333; font-weight: bold; }
+	.imgDiv { text-align: center; padding: 0 0 10px 0; }
+	</style>
+	</head>
+	<body id="splashBody">
+		<h1 class="appName">Strategic Account Planning </h1>
+		<table id="splash" cellspacing="0">
+			<tr>
+				<td id="splashLeft" width="75%">
+					<div class="about">
+						<p><FONT size="2">Strategic Account Planning for AppExchange is used by both sales managers and executives for creating and managing account plans and the associated strategies and execution tactics for these plans. Typically, the planning process is performed 1-2 times per year and is used only for strategic accounts where a company makes the decision to proactively target this account. </font></p>
+						<p><FONT size="2">The Strategic Account Planning application contains two primary modules: Account Plans and Strategies. Account Plans are tied to specific accounts and contain the overall goals for the account such as the revenue targets, account goals, strengths, and challenges. For each plan is a set of strategies that define how the account owner will meet the revenue targets by selling specific products to specific divisions, departments, or people in the account. Successful progress of a strategy typically results in the creation of an opportunity. 
+</font></p>
+						<fieldset>
+							<legend>Additional Help and Training</legend>
+							<ul>
+								<li>
+									<p><FONT size="2">To learn more about using this application in your environment, 
+											contact your Salesforce administrator. </FONT>
+									</p>
+								<li>
+									<p><FONT size="2">For answers to questions about using Salesforce, subscribers can 
+											contact customer support by clicking the Help &amp; Training link within the 
+											Salesforce application</FONT>.</p>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+				</td>
+				<td><div id="splashCenter"></div>
+				</td>
+				<td id="splashRight" width="25%">
+					<div class="exchange">
+						<h2 class="exchangeTitle">The AppExchange</h2>
+						<p><FONT size="2">The AppExchange is the world’s first on-demand application-sharing 
+								service. The dozens of pre-built applications and components it offers have 
+								been created by salesforce.com customers, developers, and partners. With these 
+								apps, users can do everything from managing expenses to tracking purchasing to 
+								monitoring recruiting. Companies can browse, test drive, and install these apps 
+								into their salesforce.com accounts with a single click. </FONT>
+						</p>
+						<p><FONT size="2">Using the AppExchange, organizations can easily add new apps to their 
+								current salesforce.com deployments, run them alongside their existing on-demand 
+								applications, and easily customize them to meet their unique needs. The breadth 
+								of applications on the AppExchange — including CRM and many other types of 
+								business apps — is limited only by the imagination of its publishers and the 
+								on-demand community itself. </FONT>
+						</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
