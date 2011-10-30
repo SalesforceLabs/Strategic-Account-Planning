@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Plan2User</value>
+    </caseValues>
+    <fields>
+        <label>ロール</label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Executive Committee</masterLabel>
+            <translation>執行委員会</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products Lead</masterLabel>
+            <translation>商品リード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Engineering</masterLabel>
+            <translation>セールス・エンジニアリング</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Management</masterLabel>
+            <translation>セールス管理</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Lead</masterLabel>
+            <translation>サービスリード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>取引先プラン</label>
+        <name>SFDC_Acct_Plan__c</name>
+        <relationshipLabel>取引先の計画チーム</relationshipLabel>
+    </fields>
+    <fields>
+        <label>取引先プランのチームメンバー</label>
+        <name>User__c</name>
+        <relationshipLabel><!-- SFDC_Plan2User --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

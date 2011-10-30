@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Strategy2Oppty</value>
+    </caseValues>
+    <fields>
+        <label>商談名</label>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- Account Plan Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>戦略</label>
+        <name>SFDC_Strategy__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>
