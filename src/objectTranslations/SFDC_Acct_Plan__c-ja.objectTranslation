@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Acct_Plan</value>
+    </caseValues>
+    <fields>
+        <label>取引先の目的</label>
+        <name>Account_Goals__c</name>
+    </fields>
+    <fields>
+        <label>取引先の売上成長</label>
+        <name>Account_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <label>取引先タイプ</label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Existing Customer</masterLabel>
+            <translation>既存顧客</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer</masterLabel>
+            <translation>新規顧客</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>取引先</label>
+        <name>Account__c</name>
+        <relationshipLabel>取引先の計画</relationshipLabel>
+    </fields>
+    <fields>
+        <label>主要ビジネス問題</label>
+        <name>Key_Business_Problems__c</name>
+    </fields>
+    <fields>
+        <label>主要取引先責任者スポンサー</label>
+        <name>Key_Client_Sponsor__c</name>
+        <relationshipLabel>取引先の計画</relationshipLabel>
+    </fields>
+    <fields>
+        <label>昨年の会計年度の取引先売上高</label>
+        <name>Last_FY_Account_Sales__c</name>
+    </fields>
+    <fields>
+        <label>昨年の会計年度の商品売上高</label>
+        <name>Last_FY_Product_Sales__c</name>
+    </fields>
+    <fields>
+        <label>昨年の会計年度のサービス売上高</label>
+        <name>Last_FY_Services_Sales__c</name>
+    </fields>
+    <fields>
+        <label>昨年の計画修正</label>
+        <name>Last_Plan_Revision__c</name>
+    </fields>
+    <fields>
+        <label>現在の会計年度の取引先売上高目的</label>
+        <name>Plan_FY_Account_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label>現在の会計年度の商品売上高目的</label>
+        <name>Plan_FY_Product_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label>現在の会計年度のサービス売上高</label>
+        <name>Plan_FY_Services_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label>計画年の状況</label>
+        <name>Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>承認</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>ドラフト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>未着手</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review</masterLabel>
+            <translation>レビュー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>計画年</label>
+        <name>Planning_Year__c</name>
+        <picklistValues>
+            <masterLabel>FY2005</masterLabel>
+            <translation><!-- FY2005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2006</masterLabel>
+            <translation><!-- FY2006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2007</masterLabel>
+            <translation><!-- FY2007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2008</masterLabel>
+            <translation><!-- FY2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2009</masterLabel>
+            <translation><!-- FY2009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2010</masterLabel>
+            <translation><!-- FY2010 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>潜在的な障壁</label>
+        <name>Potential_Barriers__c</name>
+    </fields>
+    <fields>
+        <label>商品売上高</label>
+        <name>Product_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <label>サービス売上高</label>
+        <name>Services_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <label>強度要求</label>
+        <name>Strengths_to_Leverage__c</name>
+    </fields>
+    <layouts>
+        <layout>SFDC Acct Plan Layout</layout>
+        <sections>
+            <label>会計</label>
+            <section>Financials</section>
+        </sections>
+        <sections>
+            <label>プラン詳細</label>
+            <section>Plan Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

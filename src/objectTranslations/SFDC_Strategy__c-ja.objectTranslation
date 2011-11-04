@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Strategy</value>
+    </caseValues>
+    <fields>
+        <label>取引先</label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>対応した問題点</label>
+        <name>Business_Problem_Addressed__c</name>
+    </fields>
+    <fields>
+        <label>予定完了日</label>
+        <name>Est_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label>商品の予定収益</label>
+        <name>Estimated_Product_Revenue__c</name>
+    </fields>
+    <fields>
+        <label>サービスの予定収益</label>
+        <name>Estimated_Service_Revenue__c</name>
+    </fields>
+    <fields>
+        <label>予定総収入</label>
+        <name>Estimated_Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label>取引先責任者スポンサー</label>
+        <name>Key_Contact_Sponsor__c</name>
+        <relationshipLabel><!-- Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>取引先の計画</label>
+        <name>SFDC_Acct_Plan__c</name>
+        <relationshipLabel><!-- Strategies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>目的</label>
+        <name>Solution_Goal__c</name>
+    </fields>
+    <fields>
+        <label>戦略の状況</label>
+        <name>Strategy_Status__c</name>
+        <picklistValues>
+            <masterLabel>Investigation</masterLabel>
+            <translation>調査</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost - No Opportunity</masterLabel>
+            <translation>商談失敗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>未着手</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Created</masterLabel>
+            <translation>商談作成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won - Achieved Rev. Goals</masterLabel>
+            <translation>成功 - 目標収益実現</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won - Partial Achievement</masterLabel>
+            <translation>成功 - 部分的な達成</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>SFDC Strategy Layout</layout>
+        <sections>
+            <label>戦略詳細</label>
+            <section>Strategy Detail</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

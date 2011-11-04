@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- 設定取得 --></label>
+        <name>SetupCheckAppli</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Strategic Account Planning --></label>
+        <name>StrategicAccountPlanning</name>
+    </customApplications>
+    <customTabs>
+        <label>Strategic Account Planning について</label>
+        <name>AboutStrategicAccountPlanning</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- テーブル＆タブ設定取得 --></label>
+        <name>SetupCheckTab</name>
+    </customTabs>
+    <scontrols>
+        <label><!-- AboutStrategicAccountPlanning --></label>
+        <name>AboutStrategicAccountPlanning</name>
+    </scontrols>
+</Translations>
